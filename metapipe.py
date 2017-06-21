@@ -40,9 +40,9 @@ def input_check(*files):
 def parse_args():
     myparser=argparse.ArgumentParser(description="Analysis pipeline for MetaMed database")
     shareparser = argparse.ArgumentParser(add_help=False)
-    shareparser.add_argument('--input', type=str,required=True, help="Input fastq files,")
+    shareparser.add_argument('--input', type=str,required=True, help="Input fastq files")
     shareparser.add_argument('--outdir', type=str,required=True, default="./"
-                             ,help = "Output directory")
+                             ,help = "Output directory [deafult:./]")
     shareparser.add_argument('--outprefix', type=str, required=True, default="output",
                              help="Output filename prefix [default:output]")
     shareparser.add_argument('--keeptemp',action="store_true",default=False,
