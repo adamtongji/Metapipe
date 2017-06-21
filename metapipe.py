@@ -46,7 +46,7 @@ def parse_args():
     shareparser.add_argument('--outprefix', type=str, required=True, default="output",
                              help="Output filename prefix [default:output]")
     shareparser.add_argument('--keeptemp',action="store_true",default=False,
-                             help="Keep all temp file for mapping and expression estimation")
+                             help="Keep all temp files for mapping and expression estimation")
     subparser= myparser.add_subparsers(help="meta_pipe.py command help", dest = "command")
     wgsparser = subparser.add_parser('WGS',help="Input whole genome sequencing data",
                                        parents=[shareparser],add_help=True)
@@ -57,7 +57,7 @@ def parse_args():
     wgsparser.add_argument('--thread',type=int,default=1,
                            help="Number of cpu cores used for this pipeline [default:1]")
     wgsparser.add_argument('--sensitive',action="store_true",default=False,
-                           help='Turn this options on if BGC mapping rate is very low in normal ratio.\
+                           help='Turn this options on if BGC mapping rate is very low in normal mode.\
                                 ')
     s16parser = subparser.add_parser('16S',help="Input 16s rDNA sequencing data",
                                      parents=[shareparser],add_help=True)
