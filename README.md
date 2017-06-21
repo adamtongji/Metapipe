@@ -73,12 +73,22 @@ python meta_pipe.py 16S --input ./16s.fastq --outdir ./16s_result --outprefix 16
 |  --keeptemp     |       Keep all temp files for mapping and expression estimation |
 |  --mapfile MAPFILE  |   Sequencing barcode file in qiime format |
 |  --filter FILTER  |     Filter out microbes lower than the ratio of metagenome [default:0.01] |
-<br>
 
-#### Sequencing barcode file in qiime format(mapfile) expample <br>
-#SampleID	BarcodeSequence	LinkerPrimerSequence	Description <br>
-SRR048044	TCAGCGCAAC	CCGTCAATTCMTTTRAGT	female_Stool	<br>
+#### Sequencing barcode file in qiime format(mapfile) example in tab-delimited format <br>
+`#SampleID	BarcodeSequence	LinkerPrimerSequence	Description` <br>
+`SRR048044	TCAGCGCAAC	CCGTCAATTCMTTTRAGT	female_Stool`  <br>
 
+### Example output file
+#### WGS mode output <br>
+|  BGC names  |  Read count |
+| :---------- | :-------- |
+|Epilancin 15X biosynthetic gene cluster |	19|
+|Salivaricin 9 biosynthetic gene cluster |	4 |
 
+#### 16S rDNA mode output <br>
+|  BGC names  |  Percentage |
+| :---------- | :-------- |
+|Alpha-galactosylceramide biosynthetic gene cluster|	0.3933|
+|Flavecin biosynthetic gene cluster	| 0.0139 |
 
 
