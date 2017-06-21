@@ -80,13 +80,13 @@ python meta_pipe.py 16S --input ./16s.fastq --outdir ./16s_result --outprefix 16
 
 ### Example output file
 #### WGS mode output <br>
-|  BGC names  |  Read count |
+|  #BGC names  |  #Read count |
 | :---------- | :-------- |
 |Epilancin 15X biosynthetic gene cluster |	19|
 |Salivaricin 9 biosynthetic gene cluster |	4 |
 
 #### 16S rDNA mode output <br>
-|  BGC names  |  Percentage |
+|  #BGC names  |  #Percentage |
 | :---------- | :-------- |
 |Alpha-galactosylceramide biosynthetic gene cluster|	0.3933|
 |Flavecin biosynthetic gene cluster	| 0.0139 |
