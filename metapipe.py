@@ -53,7 +53,7 @@ def parse_args():
     # wgsparser.add_argument('--bowtie', type=str,default = "bowtie2",
     #                        help = "Bowtie2 path")
     wgsparser.add_argument('--index', type=str, required=True,
-                           help="Bowtie2 index path")
+                           help="Bowtie2 index prefix")
     wgsparser.add_argument('--thread',type=int,default=1,
                            help="Number of cpu cores used for this pipeline [default:1]")
     wgsparser.add_argument('--sensitive',action="store_true",default=False,
