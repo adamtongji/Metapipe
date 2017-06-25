@@ -110,7 +110,7 @@ def WGS_main(input=None,  index=None, outdir=None, outprefix=None,
     sh("samtools idxstats {0}/tmp/{1}.filter.bam >{0}/tmp/{1}_mapped.txt".format(outdir, outprefix))
     _wgs_statistic("{0}/tmp/{1}_mapped.txt".format(outdir, outprefix),
                    "{0}/wgs_bgc_summary0.txt".format(outdir))
-    sh("sort -k2gr,2gr {0}/wgs_bgc_summary0.txt > {0}/wgs_bgc_summary.txt; \
+    sh("sort -t$'\t' -k2gr,2gr {0}/wgs_bgc_summary0.txt > {0}/wgs_bgc_summary.txt; \
         rm {0}/wgs_bgc_summary0.txt".format(outdir))
     if not keeptemp:
         sh("rm -rf {0}/tmp/".format(outdir))
@@ -134,7 +134,7 @@ def S16_main(input=None, mapfile=None, outdir=None, outprefix=None,
 
     _S16_statistic("{0}/tmp/cdhit_picked_otus/taxa_summary/otu_table_L6.txt".format(outdir),
                    "{0}/S16_bgc_summary0.txt".format(outdir), filter)
-    sh("sort -k2gr,2gr {0}/S16_bgc_summary0.txt > {0}/S16_bgc_summary.txt; \
+    sh("sort -t$'\t' -k2gr,2gr {0}/S16_bgc_summary0.txt > {0}/S16_bgc_summary.txt; \
      rm {0}/S16_bgc_summary0.txt".format(outdir))
     if not keeptemp:
         sh("rm -rf {0}/tmp/".format(outdir))
