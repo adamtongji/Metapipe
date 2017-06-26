@@ -23,7 +23,7 @@ python metapipe.py [options]
 wget -c 106.14.203.86:8080/data/bowtie2index.tar.gz
 ```
 or: <br>
-[Download Index Here](#106.14.203.86:8080/data/bowtie2index.tar.gz)<br>
+[Download Index Here](http://106.14.203.86:8080/data/bowtie2index.tar.gz "悬停显示")
 
 ### Main arguments: <br>
 
