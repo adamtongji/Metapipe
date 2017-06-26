@@ -20,7 +20,7 @@ python metapipe.py [options]
 ```
 #### Download bowtie2 index (for WGS/shotgun data) <br>
 ```Bash
-wget -c 106.14.203.86:8080/data/bowtie2index.tar.gz 
+wget -c [106.14.203.86:8080/data/bowtie2index.tar.gz](106.14.203.86:8080/data/bowtie2index.tar.gz)
 ```
 
 ### Main arguments: <br>
