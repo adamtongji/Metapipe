@@ -1,7 +1,7 @@
 README
 =============
 
-## Metapipe: Preprocessing pipeline for MetaMed database
+## Metapipe: Preprocessing pipeline for MetaMed website
 
 ### Download and Install: <br>
 **Requirements:** <br>
