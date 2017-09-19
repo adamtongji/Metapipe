@@ -39,7 +39,7 @@ usage: metapipe.py WGS [-h] --input INPUT --outdir OUTDIR --outprefix
 ```
 Example: <br>
 ```Bash
-python meta_pipe.py WGS --input wgs_r1.fastq,wgs_r2.fastq --index ./bowtie2index/mibig_bgc --outdir ./wgs_result 
+python metapipe.py WGS --input wgs_r1.fastq,wgs_r2.fastq --index ./bowtie2index/mibig_bgc --outdir ./wgs_result 
 --outprefix wgs_test --thread 4 --sensitive
 ```
 |  Parameter   |  Introduction |
@@ -62,7 +62,7 @@ usage: metapipe.py 16S [-h] --input INPUT --outdir OUTDIR --outprefix
 ```
 Example: <br>
 ```Bash
-python meta_pipe.py 16S --input ./16s.fastq --outdir ./16s_result --outprefix 16s_test --mapfile ./16s_map.txt
+python metapipe.py 16S --input ./16s.fastq --outdir ./16s_result --outprefix 16s_test --mapfile ./16s_map.txt
 ```
 
 |  Parameter   |  Introduction |
